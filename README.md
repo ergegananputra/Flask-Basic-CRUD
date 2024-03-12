@@ -44,6 +44,15 @@ These instructions will get you a copy of the project up and running on your loc
     pip install -r requirements.txt
     ```
 6. Import interoperabilitas.sql to MySQL database!
+7. Delete data if id above 11:
+   '''sql
+   DELETE FROM `kesehatan_umum` WHERE id > 11;
+   '''
+
+8. Set auto increment to 12:
+   ```sql
+   ALTER TABLE `kesehatan_umum` AUTO_INCREMENT = 12;
+   ```
 
 ### Running the Application
 
